@@ -59,8 +59,6 @@ var updateVisitors = () => {
         else
         {
           log += "updateVisitors: " + err + "<br/>";
-          console.log('Error:', err);
-          console.log('log:', log);}
     	}
     );
 };
@@ -69,8 +67,6 @@ var updateVisitors = () => {
 
 // Read the visitors data structure. 
 mydb.get("visitors", (err, body) => {
-  //console.log("this is my error: " + err.statusCode);
-  console.log("this is my error 2: " + err);
 	// No visitors yet, create it.
     if (err !== null && err.statusCode === 401) {
     	visitors = {"Test user": {arrived: Date.now().valueOf()}};
