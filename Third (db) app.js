@@ -10,7 +10,7 @@
 
 
 var cloudantCred = {
-	<< >>
+	,"@cloudant/cloudant": "latest"
 };
 
 
